@@ -25,4 +25,4 @@ None
 ## Acknowledgments
 
 * Are you want to use material widget?
-* What is Material? [Resources](https://material.io/design/)
+* What is [Material](https://material.io/design/)?
