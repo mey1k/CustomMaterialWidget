@@ -24,5 +24,5 @@ None
 
 ## Acknowledgments
 
-* Are you want to use material widget?
+* Do you want to use material widget?
 * What is [Material](https://material.io/design/)?
