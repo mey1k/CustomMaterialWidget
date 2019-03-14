@@ -16,7 +16,7 @@ Qt Creator 4.6.1
 
 ## Authors
 
-* **kim Min-Jun** - *Initial work* - [Min-Jun](https://github.com/mey1k)
+* **Kim Min-Jun** - *Initial work* - [Min-Jun](https://github.com/mey1k)
 
 ## License
 
