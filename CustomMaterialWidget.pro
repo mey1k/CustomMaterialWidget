@@ -4,7 +4,7 @@
 #
 #-------------------------------------------------
 
-QT       += gui
+QT       += gui widgets
 
 TARGET = CustomMaterialWidget
 TEMPLATE = lib
@@ -22,10 +22,105 @@ DEFINES += QT_DEPRECATED_WARNINGS
 #DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x060000    # disables all the APIs deprecated before Qt 6.0.0
 
 SOURCES += \
-        custommaterialwidget.cpp
+    custommaterialwidget.cpp \
+    CustomToothLabel.cpp \
+    CustomAvatar.cpp \
+    CustomFileDialog.cpp \
+    CustomBadge.cpp \
+    CustomFlatButton.cpp \
+    CustomCalendar.cpp \
+    CustomTextField.cpp \
+    CustomDialogSetting.cpp \
+    CustomProgress.cpp \
+    CustomProgressSetting.cpp \
+    CustomDialog.cpp \
+    CustomToggle.cpp \
+    CustomToggle_internal.cpp \
+    CustomCheckable.cpp \
+    CustomFlatButton_internal.cpp \
+    CustomStyle.cpp \
+    CustomSnackbar.cpp \
+    CustomTextField_internal.cpp \
+    CustomCheckable_internal.cpp \
+    CustomCheckBox.cpp \
+    Customfab.cpp \
+    CustomScrollBar.cpp \
+    CustomScrollBar_internal.cpp \
+    CustomTabs_internal.cpp \
+    CustomTabs.cpp \
+    CustomRaisedButton.cpp \
+    CustomTextFieldSetting.cpp \
+    CustomProgress_internal.cpp \
+    CustomCircularProgressSetting.cpp \
+    CustomCircularProgress_internal.cpp \
+    CustomCircularProgress.cpp \
+    CustomDialog_internal.cpp \
+    CustomOverlayWidget.cpp \
+    CustomRipple.cpp \
+    CustomRippleOverlay.cpp \
+    CustomTheme.cpp \
+    CustomStateTransition.cpp \
+    CustomSnackbar_internal.cpp
 
 HEADERS += \
-        custommaterialwidget.h
+        custommaterialwidget.h \
+    custommaterialwidget.h \
+    CustomDialogSetting.h \
+    CustomDialog.h \
+    CustomFlatButton.h \
+    CustomToggle_internal.h \
+    CustomRippleOverlay.h \
+    CustomToggle.h \
+    CustomToggle_p.h \
+    CustomToothLabel.h \
+    CustomFileDialog.h \
+    CustomAvatar.h \
+    CustomCalendar.h \
+    CustomCheckable_internal.h \
+    CustomCheckable.h \
+    CustomCheckBox.h \
+    CustomCheckBox_p.h \
+    CustomCheckable_p.h \
+    CustomTheme.h \
+    CustomBadge.h \
+    CustomBadge_p.h \
+    CustomAvatar_p.h \
+    CustomScrollBar_p.h \
+    CustomScrollBar_internal.h \
+    CustomScrollBar.h \
+    CustomOverlayWidget.h \
+    Customfab.h \
+    CustomRaisedButton_p.h \
+    CustomRaisedButton.h \
+    Customfab_p.h \
+    CustomTabs.h \
+    CustomTabs_internal.h \
+    CustomTabs_p.h \
+    CustomTextFieldSettig.h \
+    CustomTextField.h \
+    CustomTextField_internal.h \
+    CustomTextField_p.h \
+    CustomProgress_internal.h \
+    CustomProgressSetting.h \
+    CustomProgress.h \
+    CustomProgress_p.h \
+    CustomCircularProgress_internal.h \
+    CustomCircularProgressSetting.h \
+    CustomCircularProgress.h \
+    CustomCircularProgress_p.h \
+    CustomDialog_internal.h \
+    CustomDialog_p.h \
+    CustomRipple.h \
+    CustomFlatButton_internal.h \
+    CustomFlatButton_p.h \
+    CustomSnackbar.h \
+    CustomStateTransition.h \
+    CustomStyle.h \
+    CustomSnackbar_internal.h \
+    CustomStyle_p.h \
+    CustomStateTransitionEvent.h \
+    CustomSnackbar_p.h \
+    CustomTheme_p.h
 unix {
     target.path = /usr/lib
     INSTALLS += target
