@@ -4,7 +4,7 @@
 #
 #-------------------------------------------------
 
-QT       += gui widgets
+QT += gui widgets
 
 TARGET = CustomMaterialWidget
 TEMPLATE = lib
@@ -22,7 +22,6 @@ DEFINES += QT_DEPRECATED_WARNINGS
 #DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x060000    # disables all the APIs deprecated before Qt 6.0.0
 
 SOURCES += \
-    custommaterialwidget.cpp \
     CustomToothLabel.cpp \
     CustomAvatar.cpp \
     CustomFileDialog.cpp \
@@ -60,11 +59,9 @@ SOURCES += \
     CustomRippleOverlay.cpp \
     CustomTheme.cpp \
     CustomStateTransition.cpp \
-    CustomSnackbar_internal.cpp
+    CustomSnackbar_internal.cpp \
 
 HEADERS += \
-        custommaterialwidget.h \
-    custommaterialwidget.h \
     CustomDialogSetting.h \
     CustomDialog.h \
     CustomFlatButton.h \
@@ -120,8 +117,5 @@ HEADERS += \
     CustomStyle_p.h \
     CustomStateTransitionEvent.h \
     CustomSnackbar_p.h \
-    CustomTheme_p.h
-unix {
-    target.path = /usr/lib
-    INSTALLS += target
-}
+    CustomTheme_p.h \
+
