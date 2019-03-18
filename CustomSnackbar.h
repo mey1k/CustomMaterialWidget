@@ -1,7 +1,7 @@
 #ifndef CustomSNACKBAR_H
 #define CustomSNACKBAR_H
 
-#include <Library/CustomWidget/CustomOverlayWidget.h>
+#include <CustomOverlayWidget.h>
 
 class CustomSnackbarPrivate;
 

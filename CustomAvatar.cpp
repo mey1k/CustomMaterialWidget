@@ -1,9 +1,8 @@
-#include "stdafx.h"
 #include "Customavatar.h"
 #include "Customavatar_p.h"
 #include <QPainter>
 #include "Customstyle.h"
-#include "SurgicalGuide.h"
+#include <qevent.h>
 
 /*!
 *  \class CustomAvatarPrivate

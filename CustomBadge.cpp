@@ -2,7 +2,6 @@
 #include "Custombadge_p.h"
 #include <QPainter>
 #include "Customstyle.h"
-#include "SurgicalGuide.h"
 
 /*!
 *  \class CustomBadgePrivate
@@ -50,29 +49,35 @@ void CustomBadgePrivate::init()
 *  \class CustomBadge
 */
 
-CustomBadge::CustomBadge(QWidget *parent)
+CustomBadge::CustomBadge(QWidget *parent, Theme *singletonTheme)
 	: CustomOverlayWidget(parent),
 	d_ptr(new CustomBadgePrivate(this))
 {
 	d_func()->init();
+	
+	theme = singletonTheme;
 }
 
-CustomBadge::CustomBadge(const QIcon &icon, QWidget *parent)
+CustomBadge::CustomBadge(const QIcon &icon, QWidget *parent, Theme *singletonTheme)
 	: CustomOverlayWidget(parent),
 	d_ptr(new CustomBadgePrivate(this))
 {
 	d_func()->init();
 
 	setIcon(icon);
+
+	theme = singletonTheme;
 }
 
-CustomBadge::CustomBadge(const QString &text, QWidget *parent)
+CustomBadge::CustomBadge(const QString &text, QWidget *parent, Theme *singletonTheme)
 	: CustomOverlayWidget(parent),
 	d_ptr(new CustomBadgePrivate(this))
 {
 	d_func()->init();
 
 	setText(text);
+
+	theme = singletonTheme;
 }
 
 CustomBadge::~CustomBadge()
@@ -257,9 +262,9 @@ void CustomBadge::paintEvent(QPaintEvent *event)
 	QBrush brush;
 	brush.setStyle(Qt::SolidPattern);
 
-	if (mainParent != nullptr)
+	if (theme != nullptr)
 	{
-		if (mainParent->themeType == Theme::whiteRed)
+		if (theme->themeType == ThemeType::whiteRed)
 			brush.setColor(isEnabled() ? QColor(159, 34, 65) : CustomStyle::instance().themeColor("disabled"));
 
 		else

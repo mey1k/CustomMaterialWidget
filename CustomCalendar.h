@@ -11,6 +11,8 @@
 #include <QDate>
 #include <QPen>
 
+#include <Theme.h>
+
 class CustomCalendar : public QCalendarWidget
 {
 	Q_OBJECT
@@ -18,7 +20,7 @@ class CustomCalendar : public QCalendarWidget
 		Q_PROPERTY(QColor color READ getColor WRITE setColor)
 
 public:
-	CustomCalendar(QWidget *parent = 0);
+	CustomCalendar(QWidget *parent = 0, Theme *singletonTheme = nullptr);
 	~CustomCalendar();
 
 	void setColor(const QColor &color);
@@ -41,6 +43,8 @@ private:
 	QBrush m_transparentBrush;
 
 	void getDates();
+
+	Theme *theme;
 };
 
 #endif // CALENDARMANAGER_H

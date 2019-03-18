@@ -1,15 +1,16 @@
 #include <QPainter>
 
 #include "CustomCalendar.h"
-#include "SurgicalGuide.h"
 
-CustomCalendar::CustomCalendar(QWidget *parent)
+CustomCalendar::CustomCalendar(QWidget *parent, Theme *singletonTheme)
     : QCalendarWidget(parent)
 {
     m_outlinePen.setColor(Qt::red);
     m_transparentBrush.setColor(Qt::transparent);
 
     getDates();
+
+	theme = singletonTheme;
 }
 
 CustomCalendar::~CustomCalendar()
@@ -58,7 +59,7 @@ void CustomCalendar::paintCell(QPainter *painter, const QRect &rect, const QDate
 
         QPixmap pixmap;
 
-        if (mainParent->themeType == Theme::whiteRed)
+        if (theme->themeType == ThemeType::whiteRed)
             pixmap = QPixmap(":/ThemeWhiteRed/res/svg/whiteRed/calendar_schedule_check_icon.svg");
         else
             pixmap = QPixmap(":/ThemeBlackBlue/res/svg/blueBlack/calendar_schedule_check_icon.svg");
@@ -78,7 +79,7 @@ void CustomCalendar::paintCell(QPainter *painter, const QRect &rect, const QDate
         {
             QBrush brush;
 
-            if (mainParent->themeType == Theme::whiteRed)
+            if (theme->themeType == ThemeType::whiteRed)
                 brush = QBrush(QColor(159, 34, 65), Qt::SolidPattern);
             else
                 brush = QBrush(QColor(42, 125, 225), Qt::SolidPattern);

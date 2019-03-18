@@ -6,6 +6,7 @@
 #include <qapplication.h>
 #include "CustomTheme.h"
 #include <qdesktopwidget.h>
+#include <Theme.h>
 
 class CustomFlatButtonPrivate;
 
@@ -102,6 +103,11 @@ public:
 	bool usePng = false;
 	QPixmap secondIcon;
 
+	void setTheme(Theme *singletonTheme)
+	{
+		theme = singletonTheme;
+	}
+
 protected:
 
 	CustomFlatButton(CustomFlatButtonPrivate &d, QWidget *parent = 0, Material::ButtonPreset preset = Material::FlatPreset);
@@ -127,6 +133,7 @@ private:
 	QRect rec = QApplication::desktop()->availableGeometry();
 	double correctScaleW = rec.width() / 2560.0;
 	double correctScaleH = rec.height() / 1400.0;
+	Theme *theme = nullptr;
 };
 
 #endif // CustomFLATBUTTON_H

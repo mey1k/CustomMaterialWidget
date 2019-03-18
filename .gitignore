@@ -1,0 +1,7 @@
+.vs
+bin
+GeneratedFiles
+Win32
+x64
+debug
+release

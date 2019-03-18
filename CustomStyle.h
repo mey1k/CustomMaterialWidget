@@ -2,7 +2,7 @@
 #define CustomSTYLE_H
 
 #include <QtWidgets/QCommonStyle>
-#include "Library/CustomWidget/CustomStyle_p.h"
+#include "CustomStyle_p.h"
 
 #define MATERIAL_DISABLE_THEME_COLORS \
     if (d->useThemeColors == true) { d->useThemeColors = false; }

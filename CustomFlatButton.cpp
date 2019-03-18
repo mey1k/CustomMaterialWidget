@@ -11,7 +11,6 @@
 #include "Customstyle.h"
 #include "Customflatbutton_internal.h"
 #include <qdebug.h>
-#include <SurgicalGuide.h>
 
 /*!
 *  \class CustomFlatButtonPrivate
@@ -660,9 +659,9 @@ void CustomFlatButton::paintBackground(QPainter *painter)
 		if (isEnabled()) {
 			QColor color;
 
-			if (mainParent != nullptr)
+			if (theme != nullptr)
 			{
-				if (mainParent->themeType == Theme::whiteRed)
+				if (theme->themeType == ThemeType::whiteRed)
 					color = QColor(255, 255, 255);
 				else
 					color = QColor(10, 34, 64);
@@ -675,9 +674,9 @@ void CustomFlatButton::paintBackground(QPainter *painter)
 		else {
 			QColor color;
 
-			if (mainParent != nullptr)
+			if (theme != nullptr)
 			{
-				if (mainParent->themeType == Theme::whiteRed)
+				if (theme->themeType == ThemeType::whiteRed)
 					color = QColor(217, 216, 214);
 				else
 					color = QColor(10, 34, 64, 255);
@@ -695,9 +694,9 @@ void CustomFlatButton::paintBackground(QPainter *painter)
 		if (d->q_ptr->isFocus)
 		{
 			QColor color;
-			if (mainParent != nullptr)
+			if (theme != nullptr)
 			{
-				if (mainParent->themeType == Theme::whiteRed)
+				if (theme->themeType == ThemeType::whiteRed)
 					color = QColor(159, 34, 65);
 				else
 					color = QColor(42, 125, 225);
@@ -716,9 +715,9 @@ void CustomFlatButton::paintBackground(QPainter *painter)
 		else
 		{
 			QColor color;
-			if (mainParent != nullptr)
+			if (theme != nullptr)
 			{
-				if (mainParent->themeType == Theme::whiteRed)
+				if (theme->themeType == ThemeType::whiteRed)
 					color = QColor(137, 138, 141);
 				else
 					color = QColor(132, 144, 159);

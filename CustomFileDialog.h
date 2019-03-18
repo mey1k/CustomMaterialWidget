@@ -4,6 +4,8 @@
 #include <qapplication.h>
 #include <QtWidgets/qdialog.h>
 #include <qdir.h>
+#include <Theme.h>
+#include <qdesktopwidget.h>
 
 class QTreeView;
 class QFileSystemModel;
@@ -14,7 +16,7 @@ class CDirSelectionDlg : public QDialog {
 	Q_OBJECT
 
 public:
-	CDirSelectionDlg(const QString initialPath, QWidget *parent = nullptr, QString mode = "File");
+	CDirSelectionDlg(const QString initialPath, QWidget *parent = nullptr, QString mode = "File", Theme *singletonTheme = nullptr);
 	QDir directory() const;
 
 private:
@@ -27,6 +29,8 @@ private:
 	QRect rec = QApplication::desktop()->availableGeometry();
 	int screenWidth = rec.width();
 	int screenHeight = rec.height();
+
+	Theme *theme = nullptr;
 
 public slots:
 	void onCurrentDirChanged();

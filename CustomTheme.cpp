@@ -1,5 +1,5 @@
-#include "Library/CustomWidget/CustomTheme.h"
-#include "Library/CustomWidget/CustomTheme_p.h"
+#include "CustomTheme.h"
+#include "CustomTheme_p.h"
 #include <QString>
 #include <QStringBuilder>
 #include <QDebug>

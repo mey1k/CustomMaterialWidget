@@ -2,7 +2,7 @@
 #define CustomSTATETRANSITION_H
 
 #include <QAbstractTransition>
-#include "Library/CustomWidget/CustomStateTransitionEvent.h"
+#include "CustomStateTransitionEvent.h"
 
 class CustomStateTransition : public QAbstractTransition
 {

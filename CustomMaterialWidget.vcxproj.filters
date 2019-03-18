@@ -1,0 +1,331 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Generated Files">
+      <UniqueIdentifier>{71ED8ED8-ACB9-4CE9-BBE1-E00B30144E11}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;moc;h;def;odl;idl;res;</Extensions>
+    </Filter>
+    <Filter Include="Generated Files">
+      <UniqueIdentifier>{71ED8ED8-ACB9-4CE9-BBE1-E00B30144E11}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;moc;h;def;odl;idl;res;</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="CustomAvatar.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CustomBadge.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CustomCalendar.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CustomCheckBox.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CustomCheckable.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CustomCheckable_internal.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CustomCircularProgress.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CustomCircularProgressSetting.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CustomCircularProgress_internal.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CustomDialog.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CustomDialogSetting.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CustomDialog_internal.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CustomFileDialog.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CustomFlatButton.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CustomFlatButton_internal.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CustomOverlayWidget.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CustomProgress.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CustomProgressSetting.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CustomProgress_internal.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CustomRaisedButton.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CustomRipple.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CustomRippleOverlay.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CustomScrollBar.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CustomScrollBar_internal.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CustomSnackbar.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CustomSnackbar_internal.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CustomStateTransition.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CustomStyle.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CustomTabs.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CustomTabs_internal.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CustomTextField.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CustomTextFieldSetting.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CustomTextField_internal.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CustomTheme.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CustomToggle.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CustomToggle_internal.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CustomToothLabel.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Customfab.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Theme.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="CustomAvatar.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <ClInclude Include="CustomAvatar_p.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <QtMoc Include="CustomBadge.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <ClInclude Include="CustomBadge_p.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <QtMoc Include="CustomCalendar.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="CustomCheckBox.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <ClInclude Include="CustomCheckBox_p.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <QtMoc Include="CustomCheckable.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="CustomCheckable_internal.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <ClInclude Include="CustomCheckable_p.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <QtMoc Include="CustomCircularProgress.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="CustomCircularProgressSetting.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="CustomCircularProgress_internal.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <ClInclude Include="CustomCircularProgress_p.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <QtMoc Include="CustomDialog.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="CustomDialogSetting.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="CustomDialog_internal.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <ClInclude Include="CustomDialog_p.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <QtMoc Include="CustomFileDialog.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="CustomFlatButton.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="CustomFlatButton_internal.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <ClInclude Include="CustomFlatButton_p.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <QtMoc Include="CustomOverlayWidget.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="CustomProgress.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="CustomProgressSetting.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="CustomProgress_internal.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <ClInclude Include="CustomProgress_p.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <QtMoc Include="CustomRaisedButton.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <ClInclude Include="CustomRaisedButton_p.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <QtMoc Include="CustomRipple.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="CustomRippleOverlay.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="CustomScrollBar.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="CustomScrollBar_internal.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <ClInclude Include="CustomScrollBar_p.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <QtMoc Include="CustomSnackbar.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="CustomSnackbar_internal.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <ClInclude Include="CustomSnackbar_p.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <QtMoc Include="CustomStateTransition.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <ClInclude Include="CustomStateTransitionEvent.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <QtMoc Include="CustomStyle.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <ClInclude Include="CustomStyle_p.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <QtMoc Include="CustomTabs.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="CustomTabs_internal.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <ClInclude Include="CustomTabs_p.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <QtMoc Include="CustomTextField.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="CustomTextFieldSettig.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="CustomTextField_internal.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <ClInclude Include="CustomTextField_p.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <QtMoc Include="CustomTheme.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <ClInclude Include="CustomTheme_p.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <QtMoc Include="CustomToggle.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="CustomToggle_internal.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <ClInclude Include="CustomToggle_p.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CustomToothLabel.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <QtMoc Include="Customfab.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <ClInclude Include="Customfab_p.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="debug\moc_predefs.h.cbt">
+      <Filter>Generated Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="release\moc_predefs.h.cbt">
+      <Filter>Generated Files</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Theme.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

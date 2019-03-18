@@ -2,6 +2,7 @@
 #define CustomBADGE_H
 
 #include "Customoverlaywidget.h"
+#include "Theme.h"
 
 class CustomBadgePrivate;
 
@@ -14,9 +15,9 @@ class CustomBadge : public CustomOverlayWidget
 		Q_PROPERTY(QPointF relativePosition WRITE setRelativePosition READ relativePosition)
 
 public:
-	explicit CustomBadge(QWidget *parent = 0);
-	explicit CustomBadge(const QIcon &icon, QWidget *parent = 0);
-	explicit CustomBadge(const QString &text, QWidget *parent = 0);
+	explicit CustomBadge(QWidget *parent = 0, Theme *singletonTheme = nullptr);
+	explicit CustomBadge(const QIcon &icon, QWidget *parent = 0, Theme *singletonTheme = nullptr);
+	explicit CustomBadge(const QString &text, QWidget *parent = 0, Theme *singletonTheme = nullptr);
 	~CustomBadge();
 
 	void setUseThemeColors(bool value);
@@ -59,6 +60,8 @@ protected:
 private:
 	Q_DISABLE_COPY(CustomBadge)
 		Q_DECLARE_PRIVATE(CustomBadge)
+
+		Theme *theme = nullptr;
 };
 
 #endif // CustomBADGE_H

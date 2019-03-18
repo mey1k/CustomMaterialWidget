@@ -1,6 +1,7 @@
 #ifndef CustomDIALOG_H
 #define CustomDIALOG_H
 
+#include <qpainter.h>
 #include <QScopedPointer>
 #include "Customoverlaywidget.h"
 

@@ -7,7 +7,6 @@
 #include <QPushButton>
 #include <QLineEdit>
 
-#include "SurgicalGuide.h"
 ///
 /// \brief CDirSelectionDlg::CDirSelectionDlg
 /// \param initialPath
@@ -15,8 +14,9 @@
 /// mode 0 Only File, mode 1 Only Directories
 ///
 
-CDirSelectionDlg::CDirSelectionDlg(const QString initialPath, QWidget *parent, QString mode) : QDialog(parent), m_initialPath(initialPath)
+CDirSelectionDlg::CDirSelectionDlg(const QString initialPath, QWidget *parent, QString mode, Theme *singletonTheme) : QDialog(parent), m_initialPath(initialPath)
 {
+	theme = singletonTheme;
 
 	double correctScaleW = screenWidth / 2560.0;
 	double correctScaleH = screenHeight / 1400.0;
@@ -49,7 +49,7 @@ CDirSelectionDlg::CDirSelectionDlg(const QString initialPath, QWidget *parent, Q
 
 	//QString treeStyle = "QTreeView{"
 	//	"background-color: rgba(255, 255, 255, 100);"
-	//	"border-width: 3px;"
+	//	"border-width: 3px;"g
 	//	"border-radius: 10px;"
 	//	"border-color: white;"
 	//	"font: 14px;"
@@ -57,9 +57,9 @@ CDirSelectionDlg::CDirSelectionDlg(const QString initialPath, QWidget *parent, Q
 
 	QString themeColor = "rgb(159,34,65)";
 
-	if (mainParent != nullptr)
+	if (theme != nullptr)
 	{
-		if (mainParent->themeType == Theme::whiteRed)
+		if (theme->themeType == ThemeType::whiteRed)
 		{
 			themeColor = "rgb(159,34,65)";
 		}
@@ -75,11 +75,11 @@ CDirSelectionDlg::CDirSelectionDlg(const QString initialPath, QWidget *parent, Q
 		"border-radius: 15px;"
 		"border-color: white;"
 		"padding: 6px;"
-		"min-width: "+QString::number(buttonBoxSize)+"em;"
+		"min-width: "+ QString::number(buttonBoxSize) +"em;"
 		"}"
 		"QPushButton:pressed{"
 		"color: white;"
-		"background-color: "+themeColor+";"
+		"background-color: "+ themeColor +";"
 		"border-width: 1px;"
 		"border-radius: 15px;"
 		"border-color: white;"
