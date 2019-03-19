@@ -4,6 +4,8 @@
 #include <qpainter.h>
 #include <QScopedPointer>
 #include "Customoverlaywidget.h"
+#include <qdesktopwidget.h>
+#include <qapplication.h>
 
 class QLayout;
 class CustomDialogPrivate;

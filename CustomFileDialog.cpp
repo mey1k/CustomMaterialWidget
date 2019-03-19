@@ -59,7 +59,7 @@ CDirSelectionDlg::CDirSelectionDlg(const QString initialPath, QWidget *parent, Q
 
 	if (theme != nullptr)
 	{
-		if (theme->themeType == ThemeType::whiteRed)
+		if (theme->themeType == Theme::ThemeType::whiteRed)
 		{
 			themeColor = "rgb(159,34,65)";
 		}

@@ -1,8 +1,8 @@
 #include "CustomTheme.h"
-#include "CustomTheme_p.h"
 #include <QString>
 #include <QStringBuilder>
 #include <QDebug>
+#include <CustomTheme_p.h>
 
 /*!material
 *  \class CustomThemePrivate

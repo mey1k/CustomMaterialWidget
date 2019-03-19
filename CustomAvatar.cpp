@@ -359,9 +359,9 @@ void CustomAvatar::paintEvent(QPaintEvent *event)
 
 		QColor color;
 
-		if (mainParent != nullptr)
+		if (theme != nullptr)
 		{
-			if (mainParent->themeType == Theme::whiteRed)
+			if (theme->themeType == Theme::ThemeType::whiteRed)
 				color = QColor(159, 34, 65);
 			else
 				color = QColor(42, 125, 225);
@@ -375,9 +375,9 @@ void CustomAvatar::paintEvent(QPaintEvent *event)
 			QPen pen(color, 2);
 			painter.setPen(pen);
 			
-			if (mainParent != nullptr)
+			if (theme != nullptr)
 			{
-				if (mainParent->themeType == Theme::whiteRed)
+				if (theme->themeType == Theme::ThemeType::whiteRed)
 					brush.setColor(Qt::white);
 				else
 					brush.setColor(QColor(10, 34, 64));
@@ -408,9 +408,9 @@ void CustomAvatar::paintEvent(QPaintEvent *event)
 		QBrush brush;
 		brush.setStyle(Qt::SolidPattern);
 
-		if (mainParent != nullptr)
+		if (theme != nullptr)
 		{
-			if (mainParent->themeType == Theme::whiteRed)
+			if (theme->themeType == Theme::ThemeType::whiteRed)
 			{
 				brush.setColor(backgroundColor());
 
@@ -498,9 +498,9 @@ void CustomAvatar::paintEvent(QPaintEvent *event)
 	{
 		QColor color;
 
-		if (mainParent != nullptr)
+		if (theme != nullptr)
 		{
-			if (mainParent->themeType == Theme::whiteRed)
+			if (theme->themeType == Theme::ThemeType::whiteRed)
 				color = QColor(159, 34, 65);
 			else
 				color = QColor(255, 255, 255);

@@ -3,8 +3,6 @@
 #include <QPainter>
 #include <qfont.h>
 
-#include <SurgicalGuide.h>
-
 CustomToothLabel::CustomToothLabel(QWidget* parent) : QLabel(parent)
 {
 	for (int i = 0; i < 32; i++)
@@ -128,9 +126,9 @@ void CustomToothLabel::paintEvent(QPaintEvent* e)
 
 	QPen pen(QColor(159, 34, 65));
 
-	if (mainParent != nullptr)
+	if (theme != nullptr)
 	{
-		if (mainParent->themeType == Theme::whiteRed) 
+		if (theme->themeType == Theme::ThemeType::whiteRed) 
 			pen = QPen(QColor(159, 34, 65));
 		else
 			pen = QPen(QColor(42, 125, 225));
@@ -170,9 +168,9 @@ void CustomToothLabel::paintEvent(QPaintEvent* e)
 	QPainter toothBackground(this);
 	QPixmap pixmapBg(":/Tooth/res/img/whiteRed/tooth_bright_bg.png");
 
-	if (mainParent != nullptr)
+	if (theme != nullptr)
 	{
-		if (mainParent->themeType == Theme::whiteRed)
+		if (theme->themeType == Theme::ThemeType::whiteRed)
 			pixmapBg = QPixmap(":/Tooth/res/img/whiteRed/tooth_bright_bg.png");
 		else
 			pixmapBg = QPixmap(":/Tooth/res/img/blueBlack/tooth_bg.png");
@@ -188,9 +186,9 @@ void CustomToothLabel::paintEvent(QPaintEvent* e)
 
 			QString toothUpPath = ":/Tooth/res/img/whiteRed/tooth_bright_up_" + QString::number(i + 1) + ".png";
 
-			if (mainParent != nullptr)
+			if (theme != nullptr)
 			{
-				if (mainParent->themeType == Theme::whiteRed)
+				if (theme->themeType == Theme::ThemeType::whiteRed)
 					toothUpPath = ":/Tooth/res/img/whiteRed/tooth_bright_up_" + QString::number(i + 1) + ".png";
 				else
 					toothUpPath = ":/Tooth/res/img/blueBlack/tooth_up_" + QString::number(i + 1) + ".png";
@@ -211,9 +209,9 @@ void CustomToothLabel::paintEvent(QPaintEvent* e)
 
 			QString toothDownPath = ":/Tooth/res/img/whiteRed/tooth_bright_down_" + QString::number(i + 1) + ".png";
 
-			if (mainParent != nullptr)
+			if (theme != nullptr)
 			{
-				if (mainParent->themeType == Theme::whiteRed)
+				if (theme->themeType == Theme::ThemeType::whiteRed)
 					toothDownPath = ":/Tooth/res/img/whiteRed/tooth_bright_down_" + QString::number(i + 1) + ".png";
 				else
 					toothDownPath = ":/Tooth/res/img/blueBlack/tooth_down_" + QString::number(i + 1) + ".png";

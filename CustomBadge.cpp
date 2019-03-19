@@ -264,7 +264,7 @@ void CustomBadge::paintEvent(QPaintEvent *event)
 
 	if (theme != nullptr)
 	{
-		if (theme->themeType == ThemeType::whiteRed)
+		if (theme->themeType == Theme::ThemeType::whiteRed)
 			brush.setColor(isEnabled() ? QColor(159, 34, 65) : CustomStyle::instance().themeColor("disabled"));
 
 		else

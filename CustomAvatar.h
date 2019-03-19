@@ -5,6 +5,7 @@
 #include "Customtheme.h"
 #include <QtWidgets/qtooltip.h>
 #include <QPainter>
+#include <Theme.h>
 
 class CustomAvatarPrivate;
 
@@ -44,6 +45,11 @@ public:
 
 	Material::AvatarType type() const;
 
+	void setTheme(Theme *singletonTheme)
+	{
+		theme = singletonTheme;
+	}
+
 signals:
 	void pressEvent();
 
@@ -59,6 +65,8 @@ protected:
 private:
 	Q_DISABLE_COPY(CustomAvatar)
 		Q_DECLARE_PRIVATE(CustomAvatar)
+
+		Theme *theme = nullptr;
 };
 
 #endif // CustomAVATAR_H
